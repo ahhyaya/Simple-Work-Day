@@ -32,8 +32,25 @@ textarea{
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+  /* height: 80px; */
+  /* border: dotted 1px grey;
+  border-top: none; */
+  line-height: 20px;
+  border-radius: 0 15px 15px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.col {
+  border: dotted 1px grey;
+  /* border-radius: 0 15px 15px 0; */
+}
+
+.save {
+  border-radius: 0 15px 15px 0;
+}
+.event {
+  text-align: left;
 }
 
 .hour {
@@ -71,6 +88,6 @@ textarea{
 }
 
 
-.container {
+/* .container {
   border: 1px black;
-}
+} */

@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -15,7 +19,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Work Day Scheduler</title>
 </head>
 
@@ -26,147 +30,127 @@
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container">
-    <div class="row 9am">
-      <div class="col-lg-4 col-md-6 col-12">
-        1st col
+       <!-- Timeblocks go here -->
+    <div class="row">
+      <div class="col time  col-lg-1 col-md-1 col-1">
+        9AM
       </div>
-      <div class="col">
-        2nd col
-      </div>
-      <div class="col">
-        3rd col
+      <input class="col event col-lg-10 col-md-10 col-10" id = "event" type = "text">   
+    </input>
+      <div class="col save col-lg-1 col-md-1 col-1">
+        <button type="button" class="btn btn-outline-success save" id = "save">Save</button>
       </div>
     </div>
 
     <div class="row">
-      <div class="col">
-        1st col
+      <div class="col time  col-lg-2 col-md-2 col-2">
+        time
       </div>
-      <div class="col">
-        2nd col
+      <div class="col event col-lg-8 col-md-8 col-2">
+        event
       </div>
-      <div class="col-lg-4">
-        3rd col
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        1st col
-      </div>
-      <div class="col">
-        2nd col
-      </div>
-      <div class="col">
-        3rd col
+      <div class="col save col-lg-2 col-md-2 col-2">
+        save
       </div>
     </div>
 
     <div class="row">
-      <div class="col">
-        1st col
+      <div class="col time  col-lg-2 col-md-2 col-2">
+        time
       </div>
-      <div class="col">
-        2nd col
+      <div class="col event col-lg-8 col-md-8 col-2">
+        event
       </div>
-      <div class="col">
-        3rd col
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        1st col
-      </div>
-      <div class="col">
-        2nd col
-      </div>
-      <div class="col">
-        3rd col
+      <div class="col save col-lg-2 col-md-2 col-2">
+        save
       </div>
     </div>
 
     <div class="row">
-      <div class="col">
-        1st col
+      <div class="col time  col-lg-2 col-md-2 col-2">
+        time
       </div>
-      <div class="col">
-        2nd col
+      <div class="col event col-lg-8 col-md-8 col-2">
+        event
       </div>
-      <div class="col">
-        3rd col
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        1st col
-      </div>
-      <div class="col">
-        2nd col
-      </div>
-      <div class="col">
-        3rd col
+      <div class="col save col-lg-2 col-md-2 col-2">
+        save
       </div>
     </div>
 
     <div class="row">
-      <div class="col">
-        1st col
+      <div class="col time  col-lg-2 col-md-2 col-2">
+        time
       </div>
-      <div class="col">
-        2nd col
+      <div class="col event col-lg-8 col-md-8 col-2">
+        event
       </div>
-      <div class="col">
-        3rd col
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        1st col
-      </div>
-      <div class="col">
-        2nd col
-      </div>
-      <div class="col">
-        3rd col
+      <div class="col save col-lg-2 col-md-2 col-2">
+        save
       </div>
     </div>
 
     <div class="row">
-      <div class="col">
-        1st col
+      <div class="col time  col-lg-2 col-md-2 col-2">
+        time
       </div>
-      <div class="col">
-        2nd col
+      <div class="col event col-lg-8 col-md-8 col-2">
+        event
       </div>
-      <div class="col">
-        3rd col
+      <div class="col save col-lg-2 col-md-2 col-2">
+        save
       </div>
     </div>
 
-    <!-- Timeblocks go here -->
-    <!-- 
-    <div class="input-group input-group-lg">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Time</span>
+    <div class="row">
+      <div class="col time  col-lg-2 col-md-2 col-2">
+        time
       </div>
-      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+      <div class="col event col-lg-8 col-md-8 col-2">
+        event
+      </div>
+      <div class="col save col-lg-2 col-md-2 col-2">
+        save
       </div>
     </div>
-    <br>
-    <div class="input-group input-group-lg">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Time</span>
+
+    <div class="row">
+      <div class="col time  col-lg-2 col-md-2 col-2">
+        time
       </div>
-      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+      <div class="col event col-lg-8 col-md-8 col-2">
+        event
       </div>
-    </div> -->
+      <div class="col save col-lg-2 col-md-2 col-2">
+        save
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col time  col-lg-2 col-md-2 col-2">
+        time
+      </div>
+      <div class="col event col-lg-8 col-md-8 col-2">
+        event
+      </div>
+      <div class="col save col-lg-2 col-md-2 col-2">
+        save
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col time  col-lg-2 col-md-2 col-2">
+        time
+      </div>
+      <div class="col event col-lg-8 col-md-8 col-2">
+        event
+      </div>
+      <div class="col save col-lg-2 col-md-2 col-2">
+        save
+      </div>
+    </div>
+
+ 
 
   </div>
 
