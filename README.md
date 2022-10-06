@@ -7,7 +7,7 @@
 
 <br>
 
-![webpage](./assets/1.png)
+![webpage](./assets/images/1.png)
 
 
 ## Features
