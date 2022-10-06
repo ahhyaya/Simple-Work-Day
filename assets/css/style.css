@@ -31,9 +31,7 @@ textarea{
 
 .lead{
   margin-bottom: 10px;
-}
-.description{
-  white-space: pre-wrap;
+  font-style: italic;
 }
 
 .time-block{
@@ -79,8 +77,11 @@ textarea{
   display: flex;
 }
 
-.event {
+.description {
+  white-space: pre-wrap;
   text-align: left;
+  color: rgb(12, 26, 35);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .hour {
