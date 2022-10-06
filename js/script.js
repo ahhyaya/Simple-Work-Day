@@ -1,3 +1,4 @@
+
 var saveBtn = $(".save");
 // var eventEl = $(".description");
 var time = $(".time").text().trim()
@@ -68,30 +69,34 @@ function bgColor() {
     var currentTimeStr = moment().format("HH");
     var currentTime = parseInt(currentTimeStr,10);
     console.log(currentTime)
-    console.log(typeof currentTime)
-    console.log(typeof schedulerTime)
-}});
+    
+    // console.log(typeof currentTime)
+    // console.log(typeof schedulerTime)
 
-    $('input').each(function (idNum) {
-        for (var j = 9; j <= 17; j++) {
-           
+    var inputId = thisId.siblings();      
     if (schedulerTime < currentTime) {
         // $(".row").addClass("row-grey");
-        idNum[j].addClass("past");
+        inputId.addClass("past");
     } else if (schedulerTime == currentTime) {
         // $(".row").addClass("row-red");
-        idNum[j].addClass("present");
+        inputId.addClass("present");
+        inputId.remove("past");
     } else if (schedulerTime > currentTime) {
         // $(".row").addClass("future");
-        idNum[j].addClass("future");
+        inputId.addClass("future");
+        inputId.remove("present");
     }}
 });
+
+ } // $('input').each(function (idNum) {
+    //     for (var j = 9; j <= 17; j++) {
+
+// });
    
 
-}
+// }
     
 
 
 
 // localStorage.clear();
-

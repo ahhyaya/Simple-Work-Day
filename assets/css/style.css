@@ -57,17 +57,7 @@ textarea{
 
 }
 
-.present{
-  background-color:rgb(234, 172, 172);
-}
 
-.past{
-  background-color: lightgrey;
-}
-
-.future{
-  background-color: lightgreen;
-}
 
 
 .save {
@@ -93,6 +83,20 @@ textarea{
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+.present{
+  background-color:rgb(234, 172, 172);
+}
+
+.past{
+  background-color: lightgrey;
+}
+
+.future{
+  background-color: lightgreen;
+}
+
 
 /* .past {
   background-color: #d3d3d3;
