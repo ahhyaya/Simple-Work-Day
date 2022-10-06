@@ -16,11 +16,17 @@
 
 ![feature1](./assets/images/2.png)
 
+- after events has been saved, user can still access it even after refreshing the page.
+
+![feature1](./assets/images/persist.png)
+
 - mobile friendly
 
-![feature1](./assets/3.png)
+![feature1](./assets/images/IMG_0153.PNG)
 
-![feature1](./assets/4.png)
+![feature1](./assets/images/IMG_0154.PNG))
+
+![feature1](./assets/images/IMG_0155.PNG))
 
 ---
 ## Project Status
@@ -31,5 +37,5 @@ Created by [Ruihan Gao] - feel free to contact me!
 
 Email: toruig59@gmail.com
 
-Project Link: [https://ahhyaya.github.io/Code-Quiz-2022/](https://ahhyaya.github.io/Code-Quiz-2022/)
+Project Link: [https://ahhyaya.github.io/Simple-Work-Day/](https://ahhyaya.github.io/Simple-Work-Day/)
 
