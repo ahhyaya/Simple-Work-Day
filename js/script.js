@@ -40,13 +40,13 @@ function bgColor() {
     console.log(currentTime)
 
     if(schedulerTime < currentTime) {
-        $(".row").addClass("row-grey");
+        // $(".row").addClass("row-grey");
         $(".description").addClass("row-grey");
     } else if (schedulerTime == currentTime){
-        $(".row").addClass("row-red");
+        // $(".row").addClass("row-red");
         $(".description").addClass("row-red");
     } else if (schedulerTime > currentTime){
-        $(".row").addClass("row-green");
+        // $(".row").addClass("row-green");
         $(".description").addClass("row-green");
     }
        
