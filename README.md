@@ -1,9 +1,9 @@
-# <Timed Code Quiz 2022>
+# <Simple Work Day>
 
-# A coding quiz testing app
+# A simple calendar app for scheduling your work day
 
 
-### application that enables student to take a timed quiz Javascript Fundamentals.
+### application that provide simply way to let user schedule or track their work day events.
 
 <br>
 
