@@ -47,15 +47,15 @@ textarea{
 }
 
 .row-red{
-  background-color: red;
+  background-color:rgb(234, 172, 172);
 }
 
 .row-grey{
-  background-color: grey;
+  background-color: lightgrey;
 }
 
 .row-green{
-  background-color: green;
+  background-color: lightgreen;
 }
 
 
