@@ -46,7 +46,7 @@ textarea{
   /* height: 80px; */
   /* border: dotted 1px grey;
   border-top: none; */
-  line-height: 15px;
+  line-height: 25px;
   border-radius: 0 15px 15px 0;
   width: 100%;
   text-align: center;
@@ -86,6 +86,10 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  display:flex;
+  text-align: center;
+  padding:0;
+  margin: 0;
 }
 
 /* .past {
