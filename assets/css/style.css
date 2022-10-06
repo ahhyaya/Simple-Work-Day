@@ -15,17 +15,21 @@ textarea{
 }
 
 .jumbotron {
+  margin:20px 20px 50px 20px;
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-color: rgba(246, 246, 181, 0.959);
+  color: rgb(12, 26, 35);
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid rgb(12, 26, 35);
+  border-style: double;
 }
 
 #title {
+  margin-bottom: 40px;
   font-family: 'Peralta', cursive;
 }
 
+.lea
 .description{
   white-space: pre-wrap;
 }
