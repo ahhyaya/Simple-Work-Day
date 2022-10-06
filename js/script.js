@@ -68,13 +68,13 @@ function bgColor() {
 
     if (schedulerTime < currentTime) {
         // $(".row").addClass("row-grey");
-        $(".description").addClass("row-grey");
+        $(".description").addClass("past");
     } else if (schedulerTime == currentTime) {
         // $(".row").addClass("row-red");
-        $(".description").addClass("row-red");
+        $(".description").addClass("present");
     } else if (schedulerTime > currentTime) {
-        $(".row").addClass("row-green");
-        $(".description").addClass("row-green");
+        $(".row").addClass("future");
+        $(".description").addClass("future");
     }
 
 }
