@@ -9,13 +9,13 @@ var currentTime = moment().format("H : mm a");
 $("#currentTime").text(currentTime);
 
 
-onbeforeunload();
+// onbeforeunload();
 bgColor();
 
-function onbeforeunload() {
-    time.innerText = localStorage.getItem(time);
-    description.innerText = localStorage.getItem(description);
-}
+// function onbeforeunload() {
+//     time.innerText = localStorage.getItem(time);
+//     description.innerText = localStorage.getItem(description);
+// }
 
 
 
@@ -32,6 +32,7 @@ saveBtn.on("click", function () {
     var time = $(this).siblings(".time").text().trim();
 
     localStorage.setItem(time, description);
+  
 
 });
 
@@ -76,7 +77,8 @@ function bgColor() {
         $(".row").addClass("future");
         $(".description").addClass("future");
     }
-
+   
+    
 }
 
 

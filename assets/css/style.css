@@ -72,6 +72,7 @@ textarea{
 
 
 .save {
+  background-color: #149fbec9;
   border-radius: 0 15px 15px 0;
 }
 
@@ -101,17 +102,17 @@ textarea{
 } */
 
 .save-btn {
-  border-left: 1px solid black;
+  /* border-left: 1px solid black; */
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
 }
 
-.save-btn i:hover {
+/* .save-btn:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
-}
+} */
 
 
 /* .container {
