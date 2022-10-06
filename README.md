@@ -12,15 +12,13 @@
 
 ## Features
 
-- timed quiz when chose the wrong answer time substract by 10 seconds.
+- each time block is color-coded to indicate whether it is in the past(grey), present(red), or future(green)
 
-![feature1](./assets/2.png)
+![feature1](./assets/images/2.png)
 
-- showing final score list
+- mobile friendly
 
 ![feature1](./assets/3.png)
-
-- clear score record and restart function
 
 ![feature1](./assets/4.png)
 

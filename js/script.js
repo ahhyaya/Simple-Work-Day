@@ -17,17 +17,19 @@ bgColor();
 
 onbeforeunload();
 function onbeforeunload() {
-for (var i = 0; i < localStorage.length; i++) {
-                var storedTime = localStorage.key(i);
-                var storedEvent = localStorage[storedTime];
-
-                console.log(localStorage.getItem(localStorage[storedTime]))
-
-                if (schedulerTime == storedTime) {
-                    $(".description").text(storedEvent);
-                } else if (storedEvent == null) {
-                    localStorage.removeItem(storedEvent);
-                }
+for (var i = 0; i < inputEl.length; i++) {
+                  var storedTime = inputEl[i].dataset.time;
+                // var storedTime = localStorage.key(i);
+                // var storedEvent = localStorage[storedTime];
+                var storedData = localStorage.getItem(storedTime);
+                console.log(storedTime)
+                console.log(storedData)
+                inputEl[i].value = storedData;
+                // if (schedulerTime == storedTime) {
+                //     $(".description").text(des);
+                // } else if (des == null) {
+                //     localStorage.removeItem(storedTime);
+                // }
             }
 }
 
@@ -36,9 +38,11 @@ function bgColor() {
     $('.time').each(function () {
         for (var i = 9; i <= 17; i++) {
             var thisId = $(this).attr('id', i);
-
+            
             schedulerTime = parseInt($(thisId).text(), 10);
             console.log(schedulerTime);
+
+            
 
             var currentTimeStr = moment().format("HH");
             var currentTime = parseInt(currentTimeStr, 10);
@@ -48,6 +52,7 @@ function bgColor() {
             // console.log(typeof schedulerTime)
 
             var inputId = thisId.siblings();
+   
             if (schedulerTime < currentTime) {
                 inputId.addClass("past");
             } else if (schedulerTime == currentTime) {
