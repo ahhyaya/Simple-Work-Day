@@ -15,7 +15,7 @@ textarea{
 }
 
 .jumbotron {
-  margin:20px 20px 50px 20px;
+  margin:30px 20px 40px 20px;
   text-align: center;
   background-color: rgba(246, 246, 181, 0.959);
   color: rgb(12, 26, 35);
@@ -29,7 +29,9 @@ textarea{
   font-family: 'Peralta', cursive;
 }
 
-.lea
+.lead{
+  margin-bottom: 10px;
+}
 .description{
   white-space: pre-wrap;
 }
