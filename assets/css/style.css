@@ -74,6 +74,8 @@ textarea{
 .save {
   background-color: #149fbec9;
   border-radius: 0 15px 15px 0;
+  padding: 0;
+  display: flex;
 }
 
 .event {
@@ -102,7 +104,9 @@ textarea{
 } */
 
 .save-btn {
-  /* border-left: 1px solid black; */
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
